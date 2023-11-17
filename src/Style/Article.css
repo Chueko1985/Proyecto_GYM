@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2? family=Open+Sans&display=swap');
+.conteinerArticle{
+    
+    width: 100%; /* Ajusta el ancho del contenedor al 100% del viewport */
+    height: 100vh; /* Ajusta la altura del contenedor al 100% del viewport */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    
+}
+.conteinerArticle video{
+    width: 100%; /* Ajusta el ancho del video para que ocupe todo el contenedor */
+    height: auto;
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    margin-right: 50%;
+    margin-left: 5%;
+    position: absolute;
+    color: aliceblue;
+    
+}
+.article h1{
+    display: block;
+    background-color: rgba(78, 78, 106, 0.386);
+    text-align: left;
+    margin-left: 0%;
+    margin-right: 66%;
+    padding-left:2% ;
+    border-radius: 5px;
+   
+   
+}
+.article h2{
+    display: block;
+    
+    text-align: left;
+    margin-left: 0%;
+    margin-right: 66%;
+    padding-left:2% ;
+    padding-top: 0%;
+    background-color: rgba(78, 78, 106, 0.386);
+    border-radius: 5px;
+    text-shadow: 8px 8px 16px #160cdebd;
+   
+}
+.article p{
+    align-items: left  ;
+    padding-left: 5px;
+    font-size: 17px;
+    text-shadow: 8px 8px 16px #160cdebd;
+}
+
+/* Estilos para pantallas con un ancho máximo de 768px (tablets y dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .conteinerArticle {
+      flex-direction: column; /* Cambia la dirección del flexbox a columna */
+      height: auto; /* Elimina la altura fija para adaptarse al contenido */
+      padding: 20px; /* Añade un espacio entre los elementos */
+    }
+  
+    .conteinerArticle video {
+      width: 100%; /* Ajusta el video al 100% del ancho del contenedor */
+      height: auto;
+    }
+  
+    .article {
+      margin: 0; /* Elimina los márgenes laterales */
+    }
+  
+    .article h1, .article h2, .article p {
+      margin-right: 0; /* Elimina los márgenes derechos */
+      margin-left: 0; /* Elimina los márgenes izquierdos */
+      padding: 5px; /* Añade un espacio entre los elementos */
+      text-align: center; /* Centra el texto */
+    }
+  }

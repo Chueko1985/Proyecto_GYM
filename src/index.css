@@ -1,0 +1,7 @@
+body {
+  background-image: url(./Image/fondo2.jpg);
+  /*background-color: #8b8a8a;*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
